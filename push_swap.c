@@ -2,8 +2,7 @@
 
 t_list *sort_stacke(t_list *stacke_a)
 {
-  t_list *ptr = stacke_a;
-
+    t_list *ptr = stacke_a;
     if (lst_size(ptr) == 3)
     {
       if (!(ptr->data < ptr->next->data && ptr->next->data < ptr->next->next->data))
@@ -41,8 +40,21 @@ t_list *sort_stacke(t_list *stacke_a)
           }
         }
       }   
-        
-       return (stacke_a) ;
-    }   
+    }
+
+    // else if(lst_size(ptr) == 5)
+    // {
+    //   int size = lst_size(stacke_a);
+    //   if (size > 3)
+    //   {
+    //     int j = size - 3;
+    //     while (j > 0)
+    //     {
+    //       push_to_b(&stacke_a, &stacke_b);
+    //         j--;
+    //     }
+    //   }
+    // }
+    return (stacke_a) ;
 }
 

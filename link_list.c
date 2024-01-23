@@ -36,6 +36,14 @@ void  lstadd_back(t_list **lst, t_list *new)
   current->next = new;
 }
 
+void    lstadd_front(t_list **lst, t_list *new)
+{
+    if (lst == NULL || new == NULL)
+        return ;
+    new->next = *lst;
+    *lst = new;
+}
+
 int lst_size(t_list *lst)
 {
   int count = 0;

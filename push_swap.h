@@ -21,12 +21,16 @@ t_list *rra(t_list *stacke_a);
 
 //link_list.c
 t_list *create_node(int data);
-void  list_append(t_list **list, t_list *new_node);
-void  lstadd_back(t_list **lst, t_list *new);
-int lst_size(t_list *lst);
+void    list_append(t_list **list, t_list *new_node);
+void    lstadd_back(t_list **lst, t_list *new);
+int     lst_size(t_list *lst);
 t_list  *last_node(t_list *stacke_a);
+void    lstadd_front(t_list **lst, t_list *new);
 
 //utilis.c
 int ft_atoi(char *str);
+
+//push_to_b
+void  push_to_b(t_list **stacke_a, t_list **stacke_b);
 
 #endif
